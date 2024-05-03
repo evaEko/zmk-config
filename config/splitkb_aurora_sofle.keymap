@@ -28,18 +28,18 @@
 &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_CLR_ALL  &trans    &trans  &trans     &trans  &trans
 &trans      &kp N1            &kp N2             &kp N3             &kp N4        &kp N5                          &kp N6          &kp N7    &kp N8  &kp N9     &kp N0  &trans
 &trans      &trans            &trans             &trans             &trans        &trans                          &kp LEFT        &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &trans          &trans    &trans  &kp trans  &trans  &trans
+&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans    &trans  &kp RS(HOME)    &kp END   &trans  &trans     &trans  &trans
                               &trans             &trans             &trans        &trans        &trans    &trans  &trans          &trans    &trans  &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &trans    &trans    &trans    &trans    &trans                     &trans     &trans    &trans    &trans    &trans    &trans
-&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRC                    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans
-&trans  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &trans                     &trans     &trans    &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans    &trans    &trans   &trans    &trans  &trans     &trans    &trans    &trans    &trans    &trans
-                  &trans    &trans    &trans    &trans   &trans    &trans  &trans     &trans    &trans    &trans
+&trans  &trans    &trans    &trans    &trans    &trans                         &trans     &trans    &trans    &trans    &trans    &trans
+&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PERCENT                    &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans
+&trans  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &trans                         &trans     &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans    &trans    &trans       &trans    &trans  &trans     &trans    &trans    &trans    &trans    &trans
+                  &trans    &trans    &trans    &trans       &trans    &trans  &trans     &trans    &trans    &trans
             >;
         };
     };
