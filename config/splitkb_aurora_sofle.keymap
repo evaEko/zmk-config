@@ -26,6 +26,25 @@
             then-layer = <ADJUST>;
         };
     };
+    
+    combos {
+        compatible = "zmk,combos";
+        combo_rerun {
+            timeout-ms = <50>;
+            key-positions = <36 24 4>;
+            bindings = <&kp LCTRL &kp LSFT &kp F5>;
+        };
+        combo_finish {
+            timeout-ms = <50>;
+            key-positions = <24 4>;
+            bindings = <&kp LSFT &kp F5>;
+        };
+        combo_out_of {
+            timeout-ms = <50>;
+            key-positions = <24 10>;
+            bindings = <&kp LSFT &kp F11>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -39,7 +58,7 @@
                            &kp ESCAPE  &kp LALT  &kp TAB  &kp BACKSPACE  &kp DELETE    &kp EQUAL  &kp SPACE  &kp RET  &kp GRAVE  &kp BACKSLASH
             >;
 
-sensor-bindings = <&inc_dec_kp F5 F10 &inc_dec_kp PG_UP PG_DN>;
+sensor-bindings = <&inc_dec_kp combo_out_of F10 &inc_dec_kp combo_rerun combo_finish>;
         };
 
         lower_layer {
