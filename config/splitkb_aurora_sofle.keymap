@@ -25,7 +25,6 @@
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
-  https://github.com/evaEko/zmk-config/pulls  };
 
     keymap {
         compatible = "zmk,keymap";
@@ -39,7 +38,7 @@
                            &kp ESCAPE  &kp LALT  &kp TAB  &kp BACKSPACE  &kp DELETE    &kp EQUAL  &kp SPACE  &kp RET  &kp GRAVE  &kp BACKSLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp F10 C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
