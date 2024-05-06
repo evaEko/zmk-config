@@ -25,6 +25,7 @@
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
