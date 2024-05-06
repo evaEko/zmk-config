@@ -35,11 +35,11 @@
 &kp F1            &kp F2   &kp F3      &kp F4    &kp F5   &kp F6                                  &kp F7     &kp F8   &kp F9     &kp F10        &kp F11    &kp F12
 &kp SLASH         &kp Q    &kp W       &kp E     &kp R    &kp T                                   &kp Y      &kp U    &kp I      &kp O          &kp P      &kp MINUS
 &kp LEFT_SHIFT    &kp A    &kp S       &kp D     &kp F    &kp G                                   &kp H      &kp J    &kp K      &kp L          &kp SEMI   &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &lt 1 Z  &lt 2 X     &kp C     &kp V    &kp B          &kp F5       &none      &kp N      &kp M    &kp COMMA  &lt 2 DOT      &lt 1 SQT  &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &lt 1 Z  &lt 2 X     &kp C     &kp V    &kp B          &kp F11       &kp F5      &kp N      &kp M    &kp COMMA  &lt 2 DOT      &lt 1 SQT  &kp RIGHT_CONTROL
                            &kp ESCAPE  &kp LALT  &kp TAB  &kp BACKSPACE  &kp DELETE    &kp EQUAL  &kp SPACE  &kp RET  &kp GRAVE  &kp BACKSLASH
             >;
 
-sensor-bindings = <&inc_dec_kp F10 F11 &inc_dec_kp PG_UP PG_DN>;
+sensor-bindings = <&inc_dec_kp F5 F10 &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
