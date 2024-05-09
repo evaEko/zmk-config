@@ -49,7 +49,9 @@
                            &kp ESCAPE  &kp LALT  &kp TAB  &kp BACKSPACE  &kp DELETE    &kp EQUAL  &kp SPACE  &kp RET  &kp GRAVE  &kp BACKSLASH
             >;
 
-            sensor-bindings = <&inc_dec_kp F5 F10 &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp RS(F11) F10>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
