@@ -27,6 +27,16 @@
         };
     };
 
+    macros {
+        stepoutoff: stepoutoff {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(F11)>, <&macro_press>;
+
+            label = "STEPOUTOFF";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,11 +45,11 @@
 &kp F1            &kp F2   &kp F3      &kp F4    &kp F5   &kp F6                                  &kp F7     &kp F8   &kp F9     &kp F10        &kp F11    &kp F12
 &kp SLASH         &kp Q    &kp W       &kp E     &kp R    &kp T                                   &kp Y      &kp U    &kp I      &kp O          &kp P      &kp MINUS
 &kp LEFT_SHIFT    &kp A    &kp S       &kp D     &kp F    &kp G                                   &kp H      &kp J    &kp K      &kp L          &kp SEMI   &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &lt 1 Z  &lt 2 X     &kp C     &kp V    &kp B          &kp F11       &kp F5      &kp N      &kp M    &kp COMMA  &lt 2 DOT      &lt 1 SQT  &kp RIGHT_CONTROL
+&kp LEFT_CONTROL  &lt 1 Z  &lt 2 X     &kp C     &kp V    &kp B          &kp F11       &kp F5     &kp N      &kp M    &kp COMMA  &lt 2 DOT      &lt 1 SQT  &kp RIGHT_CONTROL
                            &kp ESCAPE  &kp LALT  &kp TAB  &kp BACKSPACE  &kp DELETE    &kp EQUAL  &kp SPACE  &kp RET  &kp GRAVE  &kp BACKSLASH
             >;
 
-sensor-bindings = <&inc_dec_kp F5 F10 &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp F5 F10 &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -91,7 +101,7 @@ sensor-bindings = <&inc_dec_kp F5 F10 &inc_dec_kp PG_UP PG_DN>;
         Adjust_layer {
             bindings = <
 &bt BT_CLR                       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
-&ext_power EXT_POWER_TOGGLE_CMD  &kp U+013E       &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
+&ext_power EXT_POWER_TOGGLE_CMD  &kp U            &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
 &none                            &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none                            &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
                                                   &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
