@@ -30,16 +30,6 @@ ZMK_COMBO(out_of, &kp LSFT &kp F11)
             then-layer = <ADJUST>;
         };
     };
-    macros {
-        zed_em_kay: zed_em_kay {
-            compatible = "zmk,behavior-macro";
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
-                ;
-        };
-    };
     
     keymap {
         compatible = "zmk,keymap";
@@ -53,7 +43,7 @@ ZMK_COMBO(out_of, &kp LSFT &kp F11)
                            &kp ESCAPE  &kp LALT  &kp TAB  &kp BACKSPACE  &kp DELETE    &kp EQUAL  &kp SPACE  &kp RET  &kp GRAVE  &kp BACKSLASH
             >;
 
-sensor-bindings = <&inc_dec_kp F11 F10 &inc_dec_kp PG_UP PG_DN>;
+sensor-bindings = <&inc_dec_kp &zed_em_kay F10 &inc_dec_kp PG_UP PG_DN>;
     };
 
         lower_layer {
