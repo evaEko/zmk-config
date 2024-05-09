@@ -28,12 +28,12 @@
     };
 
     macros {
-        stepoutoff: stepoutoff {
+        makcen: makcen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RS(F11)>, <&macro_press>;
+            bindings = <&none>, <&macro_press>;
 
-            label = "STEPOUTOFF";
+            label = "MAKCEN";
         };
     };
 
