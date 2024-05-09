@@ -30,10 +30,13 @@
     macros {
         makcen: makcen {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>, <&macro_press>;
+            bindings  
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp NUM_0 &kp NUM_1 &kp NUM_3 &kp NUM_7 >
+                , <&macro_release &kp LALT>
+                ;
 
-            label = "MAKCEN";
+            label = "makcen";
         };
     };
 
