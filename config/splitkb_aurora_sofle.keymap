@@ -58,7 +58,7 @@
 &trans          &kp EXCL          &kp AT             &kp HASH        &kp DOLLAR       &kp PERCENT                     &kp CARET       &kp AMPS        &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans                          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW       &trans                 &trans
 &trans          &trans            &trans             &trans          &trans           &trans        &trans    &trans  &kp HOME        &kp END         &trans        &trans                &trans                 &trans
-                                  &trans             &trans          &trans           &trans        &trans    &trans  &trans          &trans          &trans        &trans
+                                  &trans             &trans          &kp RET          &kp RET       &kp RET    &trans  &trans          &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -77,7 +77,7 @@
 &trans          &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                          &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0  &trans
 &trans          &trans        &trans        &trans        &trans        &trans                          &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans          &trans        &trans        &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans        &trans          &trans        &trans     &trans  &trans
-                              &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans          &trans        &trans
+                              &trans        &trans        &kp RET        &kp RET      &kp RET    &trans  &trans        &trans          &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -96,7 +96,7 @@
 &ext_power EXT_POWER_TOGGLE_CMD  &kp U            &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
 &none                            &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
 &none                            &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                                  &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+                                                  &none            &none            &kp RET          &kp RET          &kp RET              &none  &none  &none  &none  &none
             >;
         };
     };
