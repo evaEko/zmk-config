@@ -16,6 +16,19 @@
 #define ADJUST 3
 
 / {
+combos {
+    cmd-left-arrow-combo {
+        timeout-ms = <50>;  /* Combo must be pressed within 50 ms */
+        key-positions = <0 19>; /* Assuming these are the correct key positions */
+        bindings = <&kp HOME>;
+    };
+    cmd-right-arrow-combo {
+        timeout-ms = <50>;  /* Combo must be pressed within 50 ms */
+        key-positions = <0 20>; /* Assuming LGUI is 0 and RIGHT_ARROW is 20 */
+        bindings = <&kp END>;
+    };
+};
+
 
     // Activate ADJUST layer by pressing raise and lower
 
@@ -51,7 +64,7 @@
 &bt BT_CLR_ALL  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4                    &trans          &trans          &trans        &trans                &trans                 &trans
 &trans          &kp EXCL          &kp AT             &kp HASH        &kp DOLLAR       &kp PERCENT                     &kp CARET       &kp AMPS        &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans                          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW       &trans                 &trans
-&trans          &trans            &trans             &trans          &trans           &trans        &trans    &trans  &kp LGUI LEFT_ARROW  &kp LGUI RIGHT_ARROW         &trans        &trans                &trans                 &trans
+&trans          &trans            &trans             &trans          &trans           &trans        &trans    &trans  &kp HOME  &kp END         &trans        &trans                &trans                 &trans
                                   &kp LEFT_WIN            &trans          &trans          &trans       &trans       &trans  &trans          &trans          &trans        &trans
             >;
 
