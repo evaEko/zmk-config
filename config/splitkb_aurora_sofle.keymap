@@ -19,12 +19,12 @@
 combos {
     cmd-left-arrow-combo {
         timeout-ms = <50>;  /* Combo must be pressed within 50 ms */
-        key-positions = <0 19>; /* Assuming these are the correct key positions */
+        key-positions = <34 29>; /* Assuming these are the correct key positions */
         bindings = <&kp HOME>;
     };
     cmd-right-arrow-combo {
         timeout-ms = <50>;  /* Combo must be pressed within 50 ms */
-        key-positions = <0 20>; /* Assuming LGUI is 0 and RIGHT_ARROW is 20 */
+        key-positions = <34 30>; /* Assuming LGUI is 0 and RIGHT_ARROW is 20 */
         bindings = <&kp END>;
     };
 };
