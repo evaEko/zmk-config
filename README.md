@@ -22,3 +22,8 @@ then to pair with a device
 press and hold Z or X: press F2-F6
 connect
 
+If all fails:
+press and hold Z or X and F12 to erase all profiles
+press and hold Z or X and F1
+pair from device
+
