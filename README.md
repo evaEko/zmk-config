@@ -21,3 +21,6 @@ press and hold Z or X: press F12 (first key on the top left) or F11 (last key on
 then to pair with a device
 press and hold Z or X: press F2-F6
 connect
+
+if all fails:
+reflash both with the reset firmware
